@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>さぶうぇーぶ</title>
+</head>
+
+<body>
+    <header>
+        <h1>さぶうぇーぶ</h1>
+        <p>さぶうぇいのうぇーぶ、さぶうぇーぶ</p>
+        <hr>
+    </header>
+    <main>
+        <section id="parameter">
+            <h2>パラメータ</h2>
+            <label for="n">周期数</label>
+            <input type="number" id="n" value="1">
+            <label for="d">1周期に対する1行の割合（値が小さいほど1周期が長くなります）</label>
+            <input type="number" id="d" value="0.2">
+            <label for="y">振幅</label>
+            <input type="number" id="y" value="8">
+            <label for="digit">少数桁（大きいほど正確になりますが、文字数が増加します）</label>
+            <input type="number" id="digit" value="5">
+            <label for="emoji">絵文字（変更禁止）</label>
+            <input type="text" id="emoji" value=":hisubway:">
+            <label for="angle">絵文字単体の角度調整（CW）[deg]</label>
+            <input type="number" id="angle" value="0">
+        </section>
+        <button id="generateButton">生成する</button>
+        <section>
+            <h2>出力結果</h2>
+            <textarea id="output" readonly></textarea>
+            <button id="copyButton">コピー</button>
+        </section>
+    </main>
+    <footer>
+        <p>2023 MateChan</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
